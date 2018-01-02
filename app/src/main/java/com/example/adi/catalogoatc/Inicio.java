@@ -80,6 +80,12 @@ public class Inicio extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.inicio, menu);
+        getMenuInflater().inflate(R.menu.menu_catalogo, menu);
+
+
+
+
+
         return true;
     }
 
@@ -118,6 +124,7 @@ public class Inicio extends AppCompatActivity
             miFragment = new CatalogoFragment();
             Log.i("Entrada", "Contenedor");
             fragmentSeleccionado = true;
+
 
         } else if (id == R.id.nav_busquedas) {
 
