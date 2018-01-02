@@ -5,12 +5,12 @@ package com.example.adi.catalogoatc.Recursos;
  */
 
 public interface Basic {
-    String SERVER = "http://192.168.1.97/";
-    String RUTA = "CatalogoATC/";
+    String SERVER = "http://atc.mx/";
+    String RUTA = "Android/test/ejercicioApp/";
     String HOST = "localhost";
     String USER = "root";
     String PASS = "";
-    String DB = "catalogoatc";
+    String DB = "marquesada";
 
 
 }

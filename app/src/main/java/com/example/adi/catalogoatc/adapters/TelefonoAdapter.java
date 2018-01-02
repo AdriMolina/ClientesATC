@@ -76,19 +76,22 @@ public class TelefonoAdapter extends BaseAdapter{
 
         TextView txtTitulo = (TextView)view.findViewById(R.id.txtTitulo);
         TextView txtPrecio = (TextView)view.findViewById(R.id.txtPrecio);
+        TextView txtDesc = (TextView)view.findViewById(R.id.txtDesc);
 
 
-        String titulo, precio;
+        String titulo, precio, desc;
         try
         {
             titulo = getItem(position).getString("0");
-            precio = getItem(position).getString("1");
+            precio = getItem(position).getString("2");
+            desc = getItem(position).getString("1");
 
         }
         catch (JSONException e)
         {
             titulo = null;
             precio = null;
+            desc= null;
 
         }
 
@@ -96,6 +99,7 @@ public class TelefonoAdapter extends BaseAdapter{
         {
             txtTitulo.setText(titulo);
             txtPrecio.setText(precio);
+            txtDesc.setText(desc);
 
         }
 
