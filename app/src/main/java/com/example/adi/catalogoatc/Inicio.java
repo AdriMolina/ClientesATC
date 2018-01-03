@@ -20,6 +20,7 @@ import android.widget.ImageButton;
 import com.example.adi.catalogoatc.fragmentos.AccesoriosFragment;
 import com.example.adi.catalogoatc.fragmentos.CatalogoFragment;
 import com.example.adi.catalogoatc.fragmentos.ChipFragment;
+import com.example.adi.catalogoatc.fragmentos.PerfilFragment;
 import com.example.adi.catalogoatc.fragmentos.TelefonoFragment;
 
 public class Inicio extends AppCompatActivity
@@ -80,7 +81,7 @@ public class Inicio extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.inicio, menu);
-        getMenuInflater().inflate(R.menu.menu_catalogo, menu);
+
 
 
 
@@ -117,7 +118,8 @@ public class Inicio extends AppCompatActivity
             // Handle the camera action
 
         } else if (id == R.id.nav_pefil) {
-
+            miFragment = new PerfilFragment();
+            fragmentSeleccionado = true;
 
         } else if (id == R.id.nav_catalogo) {
 
@@ -150,4 +152,7 @@ public class Inicio extends AppCompatActivity
     public void onFragmentInteraction(Uri uri) {
         
     }
+
+
+
 }

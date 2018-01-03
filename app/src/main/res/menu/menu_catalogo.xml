@@ -5,7 +5,7 @@
     <item
         android:id="@+id/miCompose"
         android:icon="@drawable/ic_carrito_mas"
-        app:showAsAction="ifRoom"
+        app:showAsAction="always"
         android:title="Buscar"
         aplicación:showAsAction = "ifRoom|collapseActionView"
         aplicación:actionViewClass = "android.support .v7.widget.SearchView "
