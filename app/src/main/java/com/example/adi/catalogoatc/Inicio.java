@@ -17,9 +17,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
 
+import com.example.adi.catalogoatc.adapters.HistorialAdapter;
 import com.example.adi.catalogoatc.fragmentos.AccesoriosFragment;
 import com.example.adi.catalogoatc.fragmentos.CatalogoFragment;
 import com.example.adi.catalogoatc.fragmentos.ChipFragment;
+import com.example.adi.catalogoatc.fragmentos.HistorialContadoFragment;
+import com.example.adi.catalogoatc.fragmentos.HistorialCreditoFragment;
+import com.example.adi.catalogoatc.fragmentos.HistorialFragment;
 import com.example.adi.catalogoatc.fragmentos.PerfilFragment;
 import com.example.adi.catalogoatc.fragmentos.TelefonoFragment;
 
@@ -28,7 +32,11 @@ public class Inicio extends AppCompatActivity
         CatalogoFragment.OnFragmentInteractionListener,
         ChipFragment.OnFragmentInteractionListener,
         TelefonoFragment.OnFragmentInteractionListener,
-        AccesoriosFragment.OnFragmentInteractionListener
+        AccesoriosFragment.OnFragmentInteractionListener,
+        PerfilFragment.OnFragmentInteractionListener,
+        HistorialFragment.OnFragmentInteractionListener,
+        HistorialCreditoFragment.OnFragmentInteractionListener,
+        HistorialContadoFragment.OnFragmentInteractionListener
 {
 
     ImageButton floatButton;
@@ -129,6 +137,8 @@ public class Inicio extends AppCompatActivity
 
 
         } else if (id == R.id.nav_busquedas) {
+            miFragment = new HistorialFragment();
+            fragmentSeleccionado = true;
 
         } else if (id == R.id.nav_localizacion) {
 
